@@ -15,6 +15,9 @@ fomrIMC.addEventListener('submit', event => {
 
     const [ weight, height ] = [ inputWeight.value, inputHeight.value ]
 
+    if(!weight || !height) {
+        alert('Prencha os campos Peso e Altura!')
+    }
     const imc = calcIMC(weight, height);
     const result = resultIMC(imc);
 
