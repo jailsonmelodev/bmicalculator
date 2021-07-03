@@ -1,8 +1,8 @@
 const fomrIMC = document.querySelector('[data-form="inputCalc"]');
 
-const calcIMC = (kilos, altura) => {
-    altura = altura / 100;
-    return (kilos / (altura * altura));
+const calcIMC = (weight, height) => {
+    height = height / 100;
+    return (weight / (height * height));
 }
   
 fomrIMC.addEventListener('submit', event => {
